@@ -33,7 +33,6 @@ a.active{
 
 /* ---------------------HEADER------------------------ */
 .burger {
-   
     display: none;
 }
 
@@ -165,6 +164,9 @@ header ul a{
 .first-sec .first-sec_block{
     text-align: center;
     object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .first-sec::after{
@@ -201,6 +203,9 @@ header ul a{
     text-align: center;
     padding: 55px 0;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .phone_main img{
@@ -342,7 +347,9 @@ header ul a{
     .container{
         width: 768px;
         }
-
+        header nav img{
+            width: 50%;
+        }
         header ul {
             display: none;
         } 
@@ -484,5 +491,5 @@ header ul a{
     }
 }
 @media (max-width: 320px){
-    
+
 }
