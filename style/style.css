@@ -131,7 +131,7 @@ header ul a{
 }
 
 .buttoms_main li{
-    z-index: 11;
+    z-index: 2;
 }
 
 .buttoms_main li a{
@@ -350,12 +350,32 @@ header ul a{
         header nav img{
             width: 50%;
         }
+        header nav.active_burger  ul{
+            width: unset;
+            height: unset;
+            display: flex;
+            position: fixed;
+            top: 80px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 90;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: lightgray ;
+            justify-content: center;
+        }
+
         header ul {
             display: none;
         } 
-        header .burger{
+
+        .burger{
             display: block;
+            width: 5%;
         }
+
         .bg_main{
             background-image: none;
             background-color: #FAFAFA;;
