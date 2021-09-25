@@ -9,6 +9,7 @@ font-family: 'Roboto', sans-serif;
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 img{
     display: flex;
@@ -361,7 +362,7 @@ header ul a{
 
 @media (max-width: 768px){
     .container{
-        width: 768px;
+        /* width: 768px; */
         }
         header nav img{
             width: 70%;
@@ -507,7 +508,7 @@ header ul a{
         text-align: center;
         }
         .desc-main_fir-p{
-        margin: 30px 0 40px 0;
+        margin: 35px auto;
         }
         .bg-low_main{
         background: #252B42;
@@ -537,13 +538,23 @@ header ul a{
 
 }
 @media (max-width: 576px){
-    .container{ 
-        max-width: 576px;
+    p, h1, h2, h3, h4{
+        width: 300px;
+        margin: auto;
+        text-align: center;
     }
+
+    .container{
+        padding: 0;
+    }
+   
     .desc_main-fp{
         font-size: 24px;
-        display: flex;
-        flex-wrap: wrap;
+        width: 300px;
+        margin: auto;
+    }
+    .buttoms_main ul{
+        width: unset;
     }
     .desc_main-sp{
         font-size: 20px;
@@ -552,7 +563,11 @@ header ul a{
         font-size: 20px;
         padding: 13px 50.5px;
     }
-
+   
+    .sec__block{
+        margin: auto
+    }
+    
     .first-sec_block img{
         margin-left: -60px;
     }
@@ -561,6 +576,9 @@ header ul a{
     }
     .second-sec_intro h2{
         font-size: 22px;
+    }
+    .desc-main{
+        padding: 0;
     }
     .desc-main h3{
         font-size: 20px;
@@ -572,7 +590,7 @@ header ul a{
         font-size: 20px;
     }
     .desc_main-lower h4 {
-        padding-top: 70px;
+        padding-top: 35px;
         font-size: 24px;
     }
     .bg-low_main .buttoms_main ul{
@@ -585,12 +603,20 @@ header ul a{
         background: #252B42;
         height: 600px;
     }
+    footer{
+        padding: 10px 0;
+    }
 }
 @media (max-width: 320px){
-    *{
-        width: 320px;
+    .desc-main{
+        width: unset;
     }
-    .container{
-        max-width: 320px;
+    .first-sec {
+        margin-top: -190px;
+    }
+    p, h1, h2, h3, h4{
+        font-size: 16px;
+        width: 250px;
+        text-align: center;
     }
 }
