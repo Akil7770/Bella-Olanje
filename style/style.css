@@ -36,10 +36,26 @@ a.active{
     display: none;
 }
 
+header .container{
+    padding: 0;
+}
+
+header{
+    height: 115px;
+}
+
 header nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 115px;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+    background-color: white;
 }
 
 header nav a:hover{
@@ -348,14 +364,13 @@ header ul a{
         width: 768px;
         }
         header nav img{
-            width: 50%;
+            width: 70%;
         }
         header nav.active_burger  ul{
             width: unset;
             height: unset;
-            display: flex;
             position: fixed;
-            top: 80px;
+            top: 115px;
             left: 0;
             right: 0;
             bottom: 0;
@@ -363,19 +378,50 @@ header ul a{
             display: flex;
             flex-direction: column;
             align-items: center;
-            background: lightgray ;
+            background: #FAFAFA ;
+            transform: translateY(0);
             justify-content: center;
+            transition: 0.2s;
         }
-
-        header ul {
+        header nav.active_burger .close{
+            display: block;
+        }
+        header nav.active_burger .open{
             display: none;
+        }
+        header ul {
+            transform: translateY(100%);
+            transition: 0.2s;
+            width: unset;
+            height: unset;
+            position: fixed;
+            top: 115px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 90;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #FAFAFA ;
+            justify-content: center;
         } 
-
+        header nav.active_burger li{
+            margin-bottom: 30px;
+        }
+        header nav.active_burger a{
+            font-size:  24px;
+        }
+        
         .burger{
             display: block;
             width: 5%;
+            transition: 0.2s;
         }
-
+        .close{
+            transition: 0.2s;
+            display: none;
+        }
         .bg_main{
             background-image: none;
             background-color: #FAFAFA;;
@@ -388,7 +434,7 @@ header ul a{
         }
         .desc_main-fp{
             padding-top: 15px;
-            font-size: 36px;
+            font-size: 32px;
             line-height: 42px;
             text-align: center;
             letter-spacing: 0.2px;
@@ -415,6 +461,7 @@ header ul a{
             background: #FA4A0C;
             color: #FFFFFF;
         }
+        
         .first-sec_block img{
             margin-left: -90px;
             max-width: 90%;
@@ -490,14 +537,43 @@ header ul a{
 
 }
 @media (max-width: 576px){
-    .container{
+    .container{ 
         max-width: 576px;
+    }
+    .desc_main-fp{
+        font-size: 24px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .desc_main-sp{
+        font-size: 20px;
+    }
+    .buttoms_main li a{
+        font-size: 20px;
+        padding: 13px 50.5px;
+    }
+
+    .first-sec_block img{
+        margin-left: -60px;
     }
     .first-sec {
         margin-top: -230px;
     }
+    .second-sec_intro h2{
+        font-size: 22px;
+    }
+    .desc-main h3{
+        font-size: 20px;
+    }
+    .desc-main_fir-p{
+        font-size: 30px;
+    }
+    .desc-main_sec-p{
+        font-size: 20px;
+    }
     .desc_main-lower h4 {
         padding-top: 70px;
+        font-size: 24px;
     }
     .bg-low_main .buttoms_main ul{
         flex-direction: column;
@@ -511,5 +587,10 @@ header ul a{
     }
 }
 @media (max-width: 320px){
-
+    *{
+        width: 320px;
+    }
+    .container{
+        max-width: 320px;
+    }
 }
