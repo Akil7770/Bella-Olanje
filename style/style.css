@@ -538,6 +538,9 @@ header ul a{
 
 }
 @media (max-width: 576px){
+    .burger {
+        width: 10%;
+    }
     p, h1, h2, h3, h4{
         width: 300px;
         margin: auto;
@@ -608,7 +611,9 @@ header ul a{
     }
 }
 @media (max-width: 320px){
-   
+    .burger {
+        width: 10%;
+    }
     .first-sec {
         margin-top: -190px;
     }
