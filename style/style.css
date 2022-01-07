@@ -1,8 +1,3 @@
-/* 
-font-family: 'Montserrat', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Roboto', sans-serif; 
-*/
 *{
     margin: 0;
     padding: 0;
@@ -33,6 +28,7 @@ a.active{
 }
 
 /* ---------------------HEADER------------------------ */
+
 .burger {
     display: none;
 }
@@ -343,6 +339,14 @@ header ul a{
     .container{
         width: 992px;
         }
+        .first-sec::after{
+            content: '';
+            display: block;
+            margin: auto;
+            width: 500px;
+            height: 3px;
+            background-color: #E4E4E4;
+        }
     .desc_main h1{
         font-size: 22px;
     }
@@ -361,9 +365,6 @@ header ul a{
 }
 
 @media (max-width: 768px){
-    .container{
-        /* width: 768px; */
-        }
         header nav img{
             width: 70%;
         }
